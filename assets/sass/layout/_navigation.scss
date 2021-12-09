@@ -7,11 +7,16 @@
         position: absolute;
         left: -100vw;
     }
+    &__logo{
+        padding-left: 1em;
+    }
     &__label{
         position: absolute;
         right: 2em;
-        top: 1.5em;
+        top: 0.3em;
+        color: $white;
     }
+
     &__links{
         max-height: 0;
         overflow: hidden;
