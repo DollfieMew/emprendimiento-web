@@ -1,0 +1,14 @@
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.engranaje__rojo,
+.engranaje__negro{
+    animation: rotate 2s linear infinite;
+    transform-origin: 80% 80%;
+}

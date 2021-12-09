@@ -16,7 +16,12 @@
         top: 0.3em;
         color: $white;
     }
-
+    &__label:hover{
+        position: absolute;
+        right: 2em;
+        top: 0.3em;
+        color: $orange;
+    }
     &__links{
         max-height: 0;
         overflow: hidden;
