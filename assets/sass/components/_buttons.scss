@@ -1,0 +1,11 @@
+.button{
+    display: block;
+    padding: 0.4em 0.2em;
+    background-color: $tangerine;
+    text-decoration: none;
+    color: $black;
+    font-size: 1.1em;
+    &:hover{
+        background-color: $white;
+    }
+}

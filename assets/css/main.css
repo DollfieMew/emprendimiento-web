@@ -1,0 +1,280 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Ubuntu:wght@400;700&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@media (min-width: 992px) {
+  main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .banner {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+  }
+  .banner img {
+    max-width: 50vw;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .aside figure {
+    max-width: 180px;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em;
+    margin-top: 8px;
+  }
+  .footer__links {
+    display: flex;
+  }
+  .footer__links a {
+    margin-right: 32px;
+  }
+  .footer__links form {
+    display: flex;
+  }
+}
+.mainbanner {
+  width: 100%;
+  height: 10vh;
+  background-size: 100%;
+  background-position: center;
+}
+
+.user {
+  padding: 1em;
+}
+.user__profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.user__profile img {
+  border-radius: 50%;
+  width: 10vh;
+  height: 10vh;
+  margin-right: 1em;
+}
+.user__content h1 {
+  font-weight: 700;
+  font-size: 1.8em;
+}
+.user__content p {
+  font-size: 1.2em;
+  margin-top: 0.3em;
+}
+.user .actions {
+  display: none;
+}
+
+.banner img {
+  width: 100%;
+}
+
+.posts {
+  border: 1px solid #000000;
+  margin: 8px;
+  padding: 16px 8px;
+  font-family: "Ubuntu", sans-serif;
+}
+.posts .post {
+  border: 1px solid #060606;
+  margin: 8px;
+  padding: 8px;
+}
+.posts .post__img {
+  margin-bottom: 8px;
+}
+.posts .post__img img {
+  width: 100%;
+}
+.posts .post__title {
+  font-size: 1.6em;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+.posts .post__caption {
+  margin-bottom: 16px;
+  text-align: justify;
+  line-height: 1.5;
+}
+.posts .post__instructor {
+  font-weight: 700;
+  font-size: 1.2em;
+  margin-bottom: 16px;
+}
+.posts .post__icons {
+  display: inline-block;
+  margin-bottom: 16px;
+  font-family: "Poppins", sans-serif;
+}
+.posts .post__icons .icon {
+  display: inline-block;
+  margin-right: 8px;
+}
+.posts .post__icons .icon span {
+  margin-left: 4px;
+}
+
+.aside {
+  border: 1px solid #000000;
+  margin: 8px;
+  padding: 16px 8px;
+  font-family: "Ubuntu", sans-serif;
+  margin-bottom: 16px;
+}
+.aside figure {
+  width: 70%;
+  margin: auto;
+}
+.aside figure img {
+  width: 100%;
+  border-radius: 50%;
+  border: 2px solid #000000;
+}
+.aside h2 {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin: 1em auto;
+}
+.aside .rrss {
+  text-align: center;
+  margin-bottom: 16px;
+}
+.aside .rrss a {
+  margin: 0 4px;
+}
+.aside .rrss a svg {
+  height: 30px;
+  width: 30px;
+}
+.aside p {
+  text-align: justify;
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+.aside h3 {
+  text-align: center;
+  background-color: #060606;
+  color: #FFFFFF;
+  font-size: 1.3em;
+  padding: 8px 0;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+.aside ul {
+  list-style-type: circle;
+  padding-left: 20px;
+}
+.aside ul a {
+  text-decoration: none;
+  display: block;
+  margin-bottom: 8px;
+}
+.aside .animation {
+  max-width: 40%;
+  display: block;
+  margin: auto;
+}
+.aside .animation svg {
+  max-width: 100%;
+}
+
+footer {
+  background-color: #060606;
+  text-align: center;
+  color: #FFFFFF;
+  font-family: "Ubuntu", sans-serif;
+  padding: 3em 4em;
+}
+footer a {
+  color: #FFFFFF;
+  text-decoration: none;
+  display: block;
+  margin: 16px 0;
+}
+footer .button,
+footer input {
+  margin: 4px auto;
+}
+
+.button {
+  display: block;
+  padding: 0.4em 0.2em;
+  background-color: #FFAF6D;
+  text-decoration: none;
+  color: #000000;
+  font-size: 1.1em;
+}
+.button:hover {
+  background-color: #FFFFFF;
+}
+
+input {
+  display: block;
+  padding: 0.4em 0.2em;
+  background-color: #FFFFFF;
+  text-decoration: none;
+  color: #000000;
+  font-size: 1.1em;
+}
+input:focus {
+  background-color: #FFAF6D;
+}
+
+/*# sourceMappingURL=main.css.map */
