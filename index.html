@@ -6,9 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emprendimiento web</title>
     <link rel="stylesheet" href="assets/css/main.css">
+    <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"> 
 </head>
 <body>
-    <nav class="navbar">
+    <nav class="nav">
+        <img class="navbar__logo" src="assets/img/logo.svg" width="40" />
+          <label class="nav__label" for="toggler">
+            <i class="fas fa-bars fa-2x"></i>
+          </label>
+          <input type="checkbox" id="toggler" class="nav__toggler">
+          <ul class="nav__links">
+            <li><a href="#" class="nav__link">Acerca de</a></li>
+            <li><a href="#" class="nav__link">Cursos</a></li>
+            <li><a href="#" class="nav__link">Precios</a></li>
+          </ul>
+        </nav>
+    <!-- <nav class="navbar">
         <img class="navbar__logo" src="assets/img/logo.svg" width="80" />
         <div class="navbar__res_menu">
             <input type="checkbox" id="toggle">
@@ -21,7 +35,7 @@
                 <li class="navbar__item"><a href="#" class="navbar__link"> Precios</a></li>
             </ul>
         </div>
-    </nav>
+    </nav> -->
     <main>
         <section class="banner">
             <img src="assets/img/desarrolloweb2021t.svg" alt="Desarrollo Web 2021">
