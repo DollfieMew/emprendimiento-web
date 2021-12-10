@@ -346,6 +346,16 @@ input:focus {
   background-color: #FFAF6D;
 }
 
+.etiqueta {
+  animation: traslacion 2s linear infinite alternate;
+}
+
+.engranaje__rojo,
+.engranaje__negro {
+  animation: rotate 2s linear infinite;
+  transform-origin: 80% 80%;
+}
+
 @keyframes rotate {
   0% {
     transform: rotate(0deg);
@@ -354,10 +364,13 @@ input:focus {
     transform: rotate(360deg);
   }
 }
-.engranaje__rojo,
-.engranaje__negro {
-  animation: rotate 2s linear infinite;
-  transform-origin: 80% 80%;
+@keyframes traslacion {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(35%);
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
